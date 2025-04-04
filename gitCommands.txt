@@ -9,4 +9,8 @@ git init #converts a folder into local git repo
 git remote add origin <link> #Connects the newly created local repo to remote repo
 git push --set upstream origin main # Push the update by creating main branch if that doesnt exist
 git diff # provides the difference between last commit and current file
-git diff --cached
+git diff --cached #provides all the changes by comparing previous commit
+git log #Lists the deatails of all commits
+git show <commit_id> #Shows details of the specific commit
+git log --graph #Shows how the branches are moving in git
+git log --grep='<keyword>' #Searches for the specific keyword in the git messages and shows all results with match

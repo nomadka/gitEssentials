@@ -5,3 +5,8 @@ git clone <link> #for accessing any gitrepo from git provider
 git add <nameOfFile.txt> # Adds the file maneOfFile.txt into staging area
 git add . # Consider all modified files for staging and later commit
 git status #Gives the status of files in staging area
+git init #converts a folder into local git repo
+git remote add origin <link> #Connects the newly created local repo to remote repo
+git push --set upstream origin main # Push the update by creating main branch if that doesnt exist
+git diff # provides the difference between last commit and current file
+git diff --cached

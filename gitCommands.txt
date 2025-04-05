@@ -14,9 +14,12 @@ git log #Lists the deatails of all commits
 git show <commit_id> #Shows details of the specific commit
 git log --graph #Shows how the branches are moving in git
 git log --grep='<keyword>' #Searches for the specific keyword in the git messages and shows all results with match
+git log --oneline #Shows only commit message and partal commit_id in one line
 git mv .\currentFileName.ext newFileName.ext #Renames the file currentFilename to newFileName
 keep a file inside the empty folder named as .gitkeep so that git keep track of it
 git restore --staged <fileName> #Unstages the file back to untracked states
 git restore --staged . #Unstages all files in staged area
 git restore . #Redo the changes in the modified files (Be carefull with this command because snapshot is not created)
 git checkout <commit_id> #It shows the the history of the commit(We cant edit it)
+git checkout main #It moves the current instance to the head or main/master branch
+git revert <commit_id> #Create new commit by moving to the previous snapshot of the commit_id, it is creating a new history to go back to previous history

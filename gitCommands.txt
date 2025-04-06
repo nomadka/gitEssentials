@@ -1,25 +1,29 @@
-git config –list  # lists all the details of settings
+git config –list  #lists all the details of settings
 git config –global user.name <name> #Adds username to configuration
 git config –global user.email <email> #Adds user email to configuration
 git clone <link> #for accessing any gitrepo from git provider
 git add <nameOfFile.txt> # Adds the file maneOfFile.txt into staging area
-git add . # Consider all modified files for staging and later commit
+git add . #Consider all modified files for staging and later commit
 git status #Gives the status of files in staging area
 git init #converts a folder into local git repo
 git remote add origin <link> #Connects the newly created local repo to remote repo
 git push --set upstream origin main # Push the update by creating main branch if that doesnt exist
-git diff # provides the difference between last commit and current file
-git diff --cached #provides all the changes by comparing previous commit
+git diff #provides the difference between last commit and current file
+git diff --cached #provides all the changes by comparing with staging area files
 git log #Lists the deatails of all commits
 git show <commit_id> #Shows details of the specific commit
 git log --graph #Shows how the branches are moving in git
 git log --grep='<keyword>' #Searches for the specific keyword in the git messages and shows all results with match
 git log --oneline #Shows only commit message and partal commit_id in one line
+git log -p #Shows changes in all previous git commits
 git mv .\currentFileName.ext newFileName.ext #Renames the file currentFilename to newFileName
-keep a file inside the empty folder named as .gitkeep so that git keep track of it
+.gitkeep # keep a file inside the empty folder named as .gitkeep so that git keep track of it
 git restore --staged <fileName> #Unstages the file back to untracked states
 git restore --staged . #Unstages all files in staged area
 git restore . #Redo the changes in the modified files (Be carefull with this command because snapshot is not created)
 git checkout <commit_id> #It shows the the history of the commit(We cant edit it)
 git checkout main #It moves the current instance to the head or main/master branch
 git revert <commit_id> #Create new commit by moving to the previous snapshot of the commit_id, it is creating a new history to go back to previous history
+git revert --abort #To abort git revert action
+git config set advice.mergeConflict false #To proceed without considering any merge conflicts
+.gitignore #The file names listed in the .gitignore will not get tracked eg. folder/, folder/*.txt

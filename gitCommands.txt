@@ -1,3 +1,4 @@
+git init -b main #Initialize a local repo within the pointed directory (default branch main)
 git config –list  #lists all the details of settings
 git config –global user.name <name> #Adds username to configuration
 git config –global user.email <email> #Adds user email to configuration
